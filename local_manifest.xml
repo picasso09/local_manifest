@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
- <!-- Remotes -->
-    <remote name="github"
-            fetch="https://github.com"
-            clone-depth="1" />
- <!--Tree -->
- <project path="device/realme/RMX2185" name="picasso09/device_tree_RMX2185" remote="github" revision="lineage-18.1" />
 
- <!--Kernel -->
- <project path="kernel/realme/RMX2185" name="picasso09/Dv-kernelRMX2189Q" remote="github" revision="wifi" />
- 
- <!--Vendor -->
- <project path="vendor/realme/RMX2185" name="picasso09/vendor_tree_RMX2185" remote="github" revision="lineage-18.1" />
- 
- <!--Extras -->
- <project path="prebuilts/clang/host/linux-x86/clang-r353983c1" name="picasso09/clang-9.0.3-r353983c1" remote="github" revision="master" />
- 
-</manifest>￼Enter
+        <!-- Remote -->
+        <remote name="picasso09" fetch="https://github.com/picasso09" />
+
+        <!-- Device Trees -->
+        <project path="device/realme/RMX2185" name="android_device_realme_RMX2185" remote="picasso09" revision="lineage-21" />
+
+	<!-- Vendor Trees -->
+        <project path="vendor/realme/RMX2185" name="android_vendor_realme_RMX2185" remote="picasso09" revision="lineage-21" />
+
+	<!-- Ims Trees -->
+	<project path="vendor/realme/RMX2185-ims" name="android_vendor_realme_RMX2185-ims" remote="picasso09" revision="lineage-21-ui2" />
+
+	<!-- Kernel Trees -->
+        <project path="kernel/realme/RMX2185" name="android_kernel_realme_RMX2185" remote="picasso09" revision="c05-clang18" />
+
+	<!-- Toolchain -->
+	<project path="prebuilt/clang/host/linux-x86/proton-clang" name="proton-clang" remote="picasso09" />
+
+</manifest>
