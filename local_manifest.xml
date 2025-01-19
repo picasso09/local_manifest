@@ -5,16 +5,13 @@
         <remote name="picasso09" fetch="https://github.com/picasso09" />
 
         <!-- Device Trees -->
-        <project path="device/realme/RMX2185" name="android_device_realme_RMX2185" remote="picasso09" revision="lineage-21" />
+        <project path="device/xiaomi/rock" name="device_xiaomi_rock" remote="picasso09" revision="pixelos" />
 
 	<!-- Vendor Trees -->
-        <project path="vendor/realme/RMX2185" name="android_vendor_realme_RMX2185" remote="picasso09" revision="lineage-21" />
-
-	<!-- Ims Trees -->
-	<project path="vendor/realme/RMX2185-ims" name="android_vendor_realme_RMX2185-ims" remote="picasso09" revision="lineage-21-ui2" />
+        <project path="vendor/xiaomi/rock" name="proprietary_vendor_xiaomi_rock" remote="picasso09" revision="fifteen" />
 
 	<!-- Kernel Trees -->
-        <project path="kernel/realme/RMX2185" name="android_kernel_realme_RMX2185" remote="picasso09" revision="c05-clang18" />
+        <project path="kernel/xiaomi/rock" name="kernel_xiaomi_rock" remote="picasso09" revision="fifteen" />
 
 	<!-- Toolchain -->
 	<project path="prebuilt/clang/host/linux-x86/proton-clang" name="proton-clang" remote="picasso09" />
