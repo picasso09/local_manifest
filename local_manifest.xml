@@ -13,7 +13,4 @@
 	<!-- Kernel Trees -->
         <project path="kernel/xiaomi/rock" name="kernel_xiaomi_rock" remote="picasso09" revision="fifteen" />
 
-	<!-- Toolchain -->
-	<project path="prebuilt/clang/host/linux-x86/proton-clang" name="proton-clang" remote="picasso09" />
-
 </manifest>
