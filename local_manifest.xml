@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-        <!-- Remote -->
-        <remote name="picasso09" fetch="https://github.com/picasso09" />
+        <remote name="gh" fetch="https://github.com/picasso09" />
+        <remote name="moss" fetch="https://github.com/MillenniumOSS"/>
+        <remote name="los" fetch="https://github.com/LineageOS" />
 
-        <!-- Device Trees -->
-        <project path="device/xiaomi/rock" name="device_xiaomi_rock" remote="picasso09" revision="pixelos" />
+        <project path="device/xiaomi/rock" name="device_xiaomi_rock" remote="gh" revision="afterlife-bka2" />
 
-	<!-- Vendor Trees -->
-        <project path="vendor/xiaomi/rock" name="proprietary_vendor_xiaomi_rock" remote="picasso09" revision="fifteen" />
+        <project path="hardware/mediatek" name="android_hardware_mediatek" remote="los" revision="lineage-23.2" />
+        <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="los" revision="lineage-23.2" />
 
-	<!-- Kernel Trees -->
-        <project path="kernel/xiaomi/rock" name="kernel_xiaomi_rock" remote="picasso09" revision="fifteen" />
+
+        <project path="vendor/xiaomi/rock" name="proprietary_vendor_xiaomi_rock" remote="gh" revision="lineage-23.2" />
+        <project path="kernel/xiaomi/rock" name="kernel_xiaomi_rock" remote="gh" revision="lineage-23.2" />
+        <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="moss" revision="sixteen-qpr2" />
 
 </manifest>
